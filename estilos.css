@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorPrincipal:#2c72bc;
+    --colorPrincipalClaro: #6a97c8;
+    --colorPrincipalOscuro: #1d5487;
+    --colorClaro: #f6f6f6;
+    --colorRojo: #ef5b6f;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--colorClaro);
+}
+
+.HeaderSección1{
+    background-color: var(--colorPrincipal);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.LogoHeader {
+    width: 5em;
+}
+
+.buscadorHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.buscadorHeader input{
+    padding: 10px 5px;
+    height:  40px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 20vw;
+}
+
+.buscadorHeader svg {
+    background-color: var(--colorPrincipalOscuro);
+    height:  40px;
+    width: 50px;
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+    transition: background-color .3s ease-out;
+}
+
+.buscadorHeader svg:hover{
+    background-color: var(--colorPrincipalClaro);
+}
+
+.CarritoHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--colorPrincipalOscuro);
+    height: 40px;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.CarritoHeader svg{
+    width: 24px;
+    height: 24px;
+    transition: all .3s ease-out;
+}
+
+.CarritoHeader p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.CarritoHeader:hover{
+    background-color: var(--colorPrincipalClaro);
+}
+
+.CarritoHeader svg:hover{
+    transform: rotate(-10deg);
+}
+
+.HeaderSección2{
+    background-color: var(--colorPrincipalClaro);
+    padding: 20px 40px;
+}
+
+.HeaderSección2 nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.HeaderSección2 nav a{
+    color: #fff;
+    text-decoration: none;
+    transition:all .3s ease-out;
+}
+
+.HeaderSección2 nav a:hover{
+    color: var(--colorPrincipalOscuro);
+}
+
+.seccionProductos{
+    padding: 60px 50px;
+    border:  2px ;
+}
+
+.seccionProductos h2{
+    color: var(--colorPrincipalOscuro);
+    margin-bottom: 1.5em;
+    font-family: 'Phudu', cursive;
+}
+
+.contenedorCardsProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cardProductos {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 25px
+}
+
+
+.textosCard{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.imgCard img{
+    width: 100%;
+}
+
+.precioTextosCard{
+    margin-bottom: 10px;
+}
+
+.precioTextosCard h4{
+    color: var(--colorRojo);
+    text-decoration: line-through;
+}
+
+.precioTextosCard h3{
+    color: var(--colorPrincipalOscuro);
+    margin-left: 10px;
+}
+
+.detalleTextosCard{
+    margin-bottom: 20px;
+}
+
+.detalleTextosCard h5{
+    font-weight: 300;
+}
+
+.detalleTextosCard h3{
+    font-weight: 700;
+}
+
+.btnCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnCard a{
+    border: 1px solid var(--colorPrincipalOscuro);
+    border-radius: 28px;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--colorPrincipal);
+    transition: all .3s ease-out;
+}
+
+.btnCard a:hover {
+    background-color: var(--colorPrincipal);
+    color: #fff;
+}
+
+
+
+
